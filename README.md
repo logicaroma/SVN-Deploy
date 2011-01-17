@@ -12,9 +12,7 @@ Check out the project home page:
 * PHP 5.2+
 * SVN version 1.4+
 
-## Features
-
-## WHAT'S NEW IN 0.6.0 BETARELEASED
+## WHAT'S NEW IN 0.6.0 (BETA)
 * Get ready in few minutes with Install Wizard
 * Update multiple working copies with One Click
 * Smart Caching to optimize SVN overhead transfer
@@ -22,7 +20,7 @@ Check out the project home page:
 * AES-256 signatures storage
 * No Database required
 
-## IN DEVELOPMENT FOR 0.7.0 DEV
+## IN DEVELOPMENT FOR 0.7.0 (DEV)
 * SVN Deploy Connect: post-commit hook API for auto-update
 * Checkout from remote SVN repositories
 * Hook scripting for post-checkout (ie. Apache vhost auto-config and restart)
@@ -32,14 +30,14 @@ Check out the project home page:
 
 ### Version 0.6.0
 
-* See CHANGELOG.txt
+* See CHANGELOG.md
 
 
 ## License
 
 Copyright (c) 2010 Mutado Mobile, http://mutado.com/mobile
 
-## -------------------------------------------------------------------
+-------------------------------------------------------------------
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -62,4 +60,4 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-## -------------------------------------------------------------------
+-------------------------------------------------------------------
