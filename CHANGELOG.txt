@@ -1,0 +1,11 @@
+/** $Id: CHANGELOG.txt 501 2011-01-16 01:22:50Z lorenzo $ */
+/** $Rev: 501 $ */
+
+SVN Deploy 0.6.0, 2011-01-13
+----------------------------
+- Initial release
+- Fixed PHP 5.2 support with command line OpenSSL
+- Fixed minor bug during setup
+- Implement HTTPS support for SSL secure connection
+- Implement CACHE system w/ signature to optimize SVN status command overhead
+- Fixed minor bug during update

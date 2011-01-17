@@ -1,0 +1,470 @@
+/** layout */
+
+body {
+	overflow-y: scroll;
+}
+
+/** preloader */
+
+#progress {
+	position: fixed;
+	z-index: 50;
+	width: 143px;
+	top: 7px;
+	right: 30px;
+	background: black;
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	padding: 4px 8px 4px 8px;	
+	display: none;
+}
+
+#progress img {
+	filter:alpha(opacity=75);      
+    -moz-opacity:0.75;             
+    -khtml-opacity: 0.75;          
+    float: right;
+}
+
+#progress span {
+	color: white;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	float: left;
+	padding: 3px 0 0 0;
+}
+
+/** loginf */
+
+#login {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 200;
+	background: url( black.png );
+}
+
+#login .login_box {
+	width: 500px;
+	height: 250px;
+	background: #e0e0e0;
+	margin: -10px auto 0 auto;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+/** transcript */
+
+#transcript {
+	width: 100%;
+	min-height: 50%;
+	position: absolute;
+	z-index: 101;
+	background: black;
+	filter:alpha(opacity=90);      
+    -moz-opacity:0.90;             
+    -khtml-opacity: 0.90;          
+    opacity: 0.90;
+    display: none;
+}
+
+#transcript .tclose {
+	position: fixed;
+	z-index: 102;
+	right: 30px;
+	top: 15px;
+	font-family: Courier;
+}
+
+#transcript .tclear {
+	position: fixed;
+	z-index: 103;
+	right: 90px;
+	top: 15px;
+	font-family: Courier;
+}
+
+#transcript .tclose a, #transcript .tclear a {
+	text-decoration: none;
+	color: #00ff00;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+#transcript pre {
+	word-wrap: break-word;
+	color: #00ff00;
+	margin: 20px;
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+/** dialog */
+
+#svndeploy-dialog {
+	display: none;
+	position: fixed;
+}
+
+.dialog-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+}
+
+.dialog-wrapper .wrap1 {
+	display: table; 
+	width: 100%;
+	height: 100%; 
+	#position: relative; 
+	overflow: hidden;
+}
+
+.dialog-wrapper .wrap2 {
+	#position: absolute; 
+	#top: 50%;
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+.dialog-wrapper .wrap3 {
+	#position: relative; 
+	#top: -50%;
+}
+
+.dialog-wrapper .content {
+	margin: 0 auto;
+	width: 500px;
+	background: url( black.png );
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	text-align: center;
+	color: white;
+	padding: 50px;
+	font-size: 1.5em;
+	word-wrap: break-word;
+}
+
+/** forms */
+
+#setup {
+	background: #F0F0F0;
+}
+
+#setup ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	float: left;
+}
+
+#setup ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#setup ul li {
+	float: left;
+}
+
+#check pre.command {
+	color: #333;
+}
+
+fieldset {
+	padding: 10px 30px 10px 30px;
+	border: none;
+	width: 420px;
+}
+
+input {
+	padding: 7px;
+	display: block;
+	margin: 5px 0 0 0;
+	color: #555;
+	font-size: 0.8em;
+}
+
+input.text {
+	width: 420px;
+	margin-bottom: 20px;
+	border: 2px solid #b0b0b0;
+}
+
+input.missing {
+	border: 2px solid red;
+}
+
+input.checkbox {
+	float: left;
+	margin: 1px 0 0 0;
+}
+
+input.submit {
+	margin-bottom: 20px;
+	border: 2px solid #0d6289;
+	background: #0F78A8;
+	color: white;
+	float: left;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+input.submit:hover {
+	background: #0d6289;
+}
+
+input.back {
+	margin-bottom: 20px;
+	border: 2px solid #aa0000;
+	background: red;
+	color: white;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+input.back:hover {
+	background: #aa0000;
+}
+
+input.pass {
+	margin-bottom: 20px;
+	border: 2px solid green;
+	background: #00aa00;
+	color: white;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+input.pass:hover {
+	background: green;
+}
+
+input.pass-warn {
+	margin-bottom: 20px;
+	border: 2px solid #dBa602;
+	background: #FBB803;
+	color: white;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+input.pass-warn:hover {
+	background: #dBa602;
+}
+
+label.checkbox {
+	float: left;
+	margin: 0 0 15px 8px;
+}
+	
+/** styles */
+
+.list-big label {
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+
+.list-big p {
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+
+.details-wrapper {
+	display: none;
+}
+
+.details-wrapper code {
+	margin-top: 0;
+}
+
+.details {
+	display: block;
+	background: #d0d0d0;
+	padding: 5px;
+	border: 2px solid #bbb;
+	font-size: 0.75em;
+}
+
+.details .label {
+	float: left;
+	color: #666;
+	font-style: normal;
+	font-weight: bold;
+	padding: 2px;
+	width: 115px;
+	clear: left;
+	text-shadow: 0px 1px rgba( 255, 255, 255, 0.35 );
+}
+
+.details .value {
+	float: left;
+	padding: 2px;
+	color: #666;
+	font-style: italic;
+}
+
+.box-title {
+	padding: 4px 10px 2px 10px;
+	text-transform: uppercase;
+	font-size: 0.5em;
+}
+
+.grey {
+	background: #bbb;
+	color: #fafafa;
+}
+
+.yellow {
+	background: #e9e7ba;
+	color: #737032;
+}
+
+.rev {
+	vertical-align: super;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	padding: 3px 5px 3px 5px;
+	color: #666;
+	background: #c0c0c0;
+	text-shadow: 0px 1px rgba( 255, 255, 255, 0.35 );
+	margin: 0 3px 0 0;
+}
+
+.repo {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 0 4px 0 0;
+}
+
+.unlock {
+	background: url( 'repo.png' );
+}
+
+.lock {
+	background: url( 'lock.png' );
+}
+
+.fatal {
+	background: url( 'fatal.png' );
+}
+
+.list-big .unavailable {
+	background: #f6e1e1;
+}
+
+.list-big .unavailable:hover {
+	background: #eacaca;
+}
+
+.list-big .change {
+	background: #f8ebdb;
+}
+
+.list-big .change:hover {
+	background: #efe0ce;
+}
+
+.actions {
+	position: absolute;
+	right: 25px;
+	margin: 25px 0 0 0;
+}
+
+.refresh {
+	background-image: url( 'refresh.png' ) !important;
+	background-position: 3px 2px !important;
+	background-repeat: no-repeat !important;
+	padding-left: 18px !important;
+}
+
+.list-big li:hover {
+	background: #e6e6e6;
+}
+
+.files {
+	word-wrap: break-word;
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+.file-action {
+	padding: 1px 4px 1px 4px;
+	text-shadow: none;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.files .unversioned {
+	background-color: blue;
+	color: white;
+}
+
+.files .added {
+	background-color: green;
+	color: white;
+}
+
+.files .missing {
+	background-color: red;
+	color: white;
+}
+
+.files .deleted {
+	background-color: red;
+	color: white;
+}
+
+.files .replaced {
+	background-color: #f7900a;
+	color: white;
+}
+
+.files .modified {
+	background-color: #16aada;
+	color: white;
+}
+
+.files .merged {
+	background-color: #FBB803;
+	color: white;
+}
+
+.files .conflicted {
+	background-color: red;
+	color: white;
+}
+
+.files .ignored {
+	background-color: blue;
+	color: white;
+}
+
+.files .obstructed {
+	background-color: red;
+	color: white;
+}
+
+.files .external {
+	background-color: blue;
+	color: white;
+}
+
+.files .incomplete {
+	background-color: red;
+	color: white;
+}
