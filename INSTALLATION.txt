@@ -1,0 +1,12 @@
+/**
+ * SVN Deploy
+ *
+ * INSTALLATION INSTRUCTION
+ *
+ * @package SVNDeploy
+ */
+ 
+ Launch setup wizard
+ http://your-host/svndeploy/setup.php
+ 
+ All done :-) Thank you.
