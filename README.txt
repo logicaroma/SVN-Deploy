@@ -27,5 +27,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 -------------------------------------------------------------------
 
 	SVN Deploy <http://api.mutado.com/mobile/svndeploy>	
-
+	SVN Deploy @ GitHub <https://github.com/Mutado/SVN-Deploy>
+	
 SVN Deploy, a powerful system to securely deploy your sites, web apps & more in few seconds!
+
+	
