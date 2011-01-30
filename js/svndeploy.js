@@ -223,6 +223,12 @@ var svndeploy = {
 			var ihtml = $( '#content ul' ).html();
 			var ihtml_error = svndeploy.template_get( 'wc-list-error' );
 			$( '#content ul' ).html( '' );
+			if ( json.data.length == 0 ) {
+				// no working copies available
+				svndeploy.progress_hide();
+				svndeploy.dialog( 'svn: No Working Copies Available!' );
+				return;
+			}	
 			$.each( json.data, function( i, item ) {
 				if ( !item.err ) {
 					item.svndeploy_status = svndeploy.SVNSTATUS_NORMAL;

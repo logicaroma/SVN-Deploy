@@ -50,6 +50,15 @@ function svndeploy_svn_info( $dir, &$err = NULL ) {
 	return $props;
 }
 
+function svndeploy_svn_auth( $dir ) {
+	$command = 'log -q -r BASE ' . $dir;
+	$out = svndeploy_svn_command( $command, $err, TRUE, TRUE );
+	$out = explode( PHP_EOL, $out );
+	$pattern = '/Authentication error/';
+	preg_match_all( $pattern, $err, &$res );
+	return count( $res[ 0 ] ) == 0;
+}
+
 function svndeploy_svn_status_list() {
 	$values = array(
 			'none'				=> SVNDEPLOY_STATUS_NONE,

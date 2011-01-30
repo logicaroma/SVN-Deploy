@@ -211,8 +211,8 @@ function svndeploy_srv_login() {
 	$pass = isset( $_POST[ 'pass' ] ) ? $_POST[ 'pass' ] : FALSE;
 	
 	if ( $user != SVNDEPLOY_SVNDEPLOY_USR || $pass != SVNDEPLOY_SVNDEPLOY_PWD ) {
-		if ( isset( $_POST[ 'redirect' ] ) ) {
-			header( 'Location: ' . $_POST[ 'redirect' ] . '?error' );
+		if ( isset( $_GET[ 'redirect' ] ) ) {
+			header( 'Location: ' . $_GET[ 'redirect' ] . '?error' );
 			exit;
 		} else {
 			svndeploy_srv_auth_fail();
@@ -252,14 +252,17 @@ function svndeploy_srv_wc_list() {
 		);
 		$err;
 		$info = svndeploy_svn_info( $value, $err );
-		$res;
-		if ( $err ) {
-			$props[ 'err' ] = $err;
-			$res = $props;
-		} else {
-			$res = array_merge( $props, $info );
+		$auth = svndeploy_svn_auth( $value );
+		if ( $auth ) {
+			$res;
+			if ( $err ) {
+				$props[ 'err' ] = $err;
+				$res = $props;
+			} else {
+				$res = array_merge( $props, $info );
+			}
+			$out[] = $res;
 		}
-		$out[] = $res;
 	}
 	svndeploy_srv_out( $out );
 }
