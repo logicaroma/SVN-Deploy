@@ -42,7 +42,7 @@ define( 'SVNDEPLOY_ERR_500', 500 );
 
 
 function svndeploy_config_rev() {
-	$content = svndeploy_core_rootfile_read( 'CHANGELOG.txt' );
+	$content = svndeploy_core_rootfile_read( 'CHANGELOG.md' );
 	$pattern = '/\*\* \$Rev: (.*) \$ \*/';
 	preg_match_all( $pattern, $content, &$res );
 	return $res[ 1 ][ 0 ];

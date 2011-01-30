@@ -1,5 +1,7 @@
-/** $Id: CHANGELOG.md 508 2011-01-17 05:52:24Z lorenzo $ */
-/** $Rev: 508 $ */
+/** $Id: CHANGELOG.md 523 2011-01-30 00:02:14Z lorenzo $ */
+/** $Rev: 523 $ */
+
+## DO NOT REMOVE THIS FILE
 
 ## SVN Deploy 0.6.0, 2011-01-13
 * Initial release
